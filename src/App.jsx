@@ -14,9 +14,9 @@ function App() {
       alert("Number of adults and children cannot be less than 0.")
       return
     }
-
+    const backendBaseUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000'
     setLoading(true)
-    const res = await fetch('https://your-flask-api.onrender.com/api/itinerary', {
+    const res = await fetch(`${backendBaseUrl}/api/itinerary`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ destination, days, adults, children, activities }),
