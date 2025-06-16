@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.itinerary-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #1d4ed8; /* Tailwind's blue-700 */
+}
+
+.itinerary-content p {
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+.itinerary-content li {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
